@@ -66,6 +66,8 @@ The skill walks this procedure forward to write, or in reverse to diagnose. It c
 
 The skill returns the biggest leak in a line, the rewrite, and a ranked fix list — and flags any numbers as placeholders to swap for real proof.
 
+> **See [EXAMPLES.md](EXAMPLES.md)** for five worked examples across the channels the skill is strongest at: diagnose-and-rewrite, landing page heroes, cold email, product descriptions, and A/B-ready ad copy.
+
 ## Install
 
 This is a Claude Code skill. Drop the `conversion-copy/` folder into your skills directory:
