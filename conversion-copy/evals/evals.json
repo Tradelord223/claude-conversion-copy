@@ -1,0 +1,52 @@
+{
+  "skill_name": "conversion-copy",
+  "evals": [
+    {
+      "id": 0,
+      "name": "cold-saturated-saas-hero",
+      "prompt": "I sell a $39/month meal-prep app called PrepPilot. The market is flooded right now \u2014 MyFitnessPal, Mealime, a dozen others. My users keep saying stuff in reviews like 'I finally stopped wasting $80 a month on groceries I let rot' and 'it's the only one that actually plans around what's already in my fridge.' That fridge-inventory thing is genuinely unique to us \u2014 nobody else does it. Write the hero section for a cold-traffic landing page \u2014 headline, subhead, a few lines of body, and a CTA. Most people landing on it are just frustrated with throwing out food, they're not actively shopping for an app.",
+      "expected_output": "A landing-page hero that (a) shows a brief diagnosis recognizing a problem/solution-aware, high-sophistication market, (b) leads with the food-waste problem rather than pitching the app immediately, (c) builds the copy around the unique fridge-inventory mechanism instead of generic 'meal planning' claims, (d) dimensionalizes the benefit and uses the customers' own review language, (e) offers 2-3 alternative headlines and a what-to-test note, and (f) invents no fake stats/testimonials.",
+      "files": [],
+      "expectations": [
+        "Output includes a short diagnosis that names the prospect's awareness stage and/or market sophistication stage",
+        "The lead opens on the food-waste problem/desire, not an immediate product pitch (appropriate to a cold, not-actively-shopping audience)",
+        "The copy is built around the unique fridge-inventory mechanism rather than generic meal-planning superlatives",
+        "Customer review language (e.g., wasting money on groceries that rot / planning around what's in the fridge) is reflected in the copy",
+        "Provides 2-3 alternative headline options",
+        "Includes a recommendation of what to test first (e.g., the headline or offer)",
+        "Does not fabricate statistics, testimonials, or specific user counts; uses placeholders if proof is referenced"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "diagnose-b2b-jargon-landing",
+      "prompt": "Can you tell me why this isn't converting and fix it? It's the top of our B2B landing page for a contract-management tool aimed at small law firms:\n\n\"Welcome to ContractIQ \u2014 The Future of Contract Management. We are a leading provider of innovative, AI-powered solutions designed to streamline your workflow and maximize efficiency. Our cutting-edge platform leverages best-in-class technology to deliver unparalleled value. Sign up today!\"\n\nWe get decent traffic from LinkedIn ads but almost nobody books a demo.",
+      "expected_output": "A diagnosis-mode response: a short diagnosis identifying the core leaks (brand-as-hero instead of customer-as-hero, vague jargon with no specifics or proof, no named problem/benefit, weak CTA), a prioritized critique ordered by leverage with concrete before/after fixes, and an actual rewrite of the hero that names the law firm's real problem, speaks to the reader, cuts the Frankenwords, and uses a stronger CTA.",
+      "files": [],
+      "expectations": [
+        "Identifies that the copy makes the brand the hero rather than the customer/law firm",
+        "Flags the vague jargon / Frankenwords (e.g., 'cutting-edge', 'best-in-class', 'unparalleled', 'innovative') and the absence of specifics or proof",
+        "Critique is prioritized by leverage (headline/lead and core message before line-level polish)",
+        "Provides at least one concrete before -> after fix",
+        "Delivers an actual rewritten hero, not just commentary",
+        "The rewrite names a concrete problem or benefit for small law firms and addresses the reader as 'you'",
+        "The rewrite replaces the weak 'Sign up today!' CTA with something more specific/lower-friction (e.g., a demo framed around a payoff)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "most-aware-flash-sale-email",
+      "prompt": "Write a short promo email to our existing customers for a flash sale: 20% off all Zimbabwe hyperinflation banknotes (the 100 trillion dollar notes and the rest of the series) through this Sunday. These are people who've bought from us before and already know the product. Keep it tight \u2014 I just need a subject line and a short email.",
+      "expected_output": "A tight, offer-led promo email for a most-aware audience: leads with the deal (not a long education or heavy diagnosis), uses honest urgency tied to the real Sunday deadline, stays short, and provides a subject line (ideally a couple of options). The visible strategic reasoning should be minimal given the small, warm ask \u2014 calibration matters here.",
+      "files": [],
+      "expectations": [
+        "The email leads with the offer/deal rather than re-educating the reader about the product (appropriate for a most-aware audience)",
+        "Uses urgency tied to the real 'through Sunday' deadline and does not fabricate a countdown, fake stock scarcity, or false 'last chance' beyond the stated facts",
+        "Provides at least one subject line (preferably 2-3 options)",
+        "The email is genuinely short / tight as requested",
+        "Does not bury the small ask under a long strategic essay or oversized diagnosis block (output is calibrated to the size of the request)",
+        "Includes a clear call to action to shop the sale"
+      ]
+    }
+  ]
+}
